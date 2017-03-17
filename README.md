@@ -1,6 +1,6 @@
-# ON::Standards::Rails
+# ON::Metal
 
-ON::Standards::Rails is gem to make your life easier when applying the Open Network style to our applications. You can get started by following the instructions below.
+ON::Metal is a gem for using the Open Network style in rails applications. You can get started by following the instructions below.
 
 ## Documenation
 http://on-standards.herokuapp.com
@@ -8,7 +8,7 @@ http://on-standards.herokuapp.com
 ## Installation
 Add this line to your application's Gemfile:
 
-    gem 'on-standards-rails', '~> 2.0'
+    gem 'on-metal', '~> 1.0'
 
 And then execute:
 
@@ -17,10 +17,10 @@ And then execute:
 ## Usage
 
 Add to application.js
-`//= require on-standards`
+`//= require on-metal`
 
 add to application.sass
-`@import on-standards`
+`@import on-metal`
 
 add typekit to application.html.haml
 
