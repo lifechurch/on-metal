@@ -51,6 +51,15 @@ h6 { font-size: $font-size-h6; }
   line-height: $display-line-height;
 }
 
+// Type size modifiers
+p,
+a,
+li {
+  &.text-large { font-size: $paragraph-size-large; }
+  &.text-small { font-size: $paragraph-size-small; }
+  &.text-xsmall { font-size: $paragraph-size-xsmall; }
+}
+
 //
 // Horizontal rules
 //

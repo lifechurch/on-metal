@@ -1,1 +1,1 @@
-require 'on/metal'
+require 'on/metal/rails'

@@ -89,7 +89,15 @@
   }
 }
 
+// Truncate
+
+.text-truncate {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 // Contextual colors
+// Variables: primary color, link hover color.
 
 @include text-emphasis-variant('.text-muted', $text-muted, $brand-action);
 
@@ -102,3 +110,23 @@
 @include text-emphasis-variant('.text-danger', $brand-danger);
 
 @include text-emphasis-variant('.text-body', $body-color, $brand-action);
+
+@include text-emphasis-variant('.text-white', $white, $brand-action);
+
+
+// Table utilities
+
+.vertical-align-top,
+.vertical-align-top .display-table-cell {
+  vertical-align: top;
+}
+
+.vertical-align-middle,
+.vertical-align-middle .display-table-cell {
+  vertical-align: middle;
+}
+
+.vertical-align-bottom,
+.vertical-align-bottom .display-table-cell {
+  vertical-align: bottom;
+}

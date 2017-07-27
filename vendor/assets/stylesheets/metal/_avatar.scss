@@ -1,0 +1,41 @@
+@each $size, $font-size in $avatar-sizes {
+  .avatar-#{$size} {
+    width: #{$size}px;
+    height: #{$size}px;
+    line-height: #{$size}px;
+    border-radius: 100%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: $font-size;
+
+    img {
+      border-radius: 100%;
+      display: block;
+    }
+
+    .avatar-stack & {
+      margin-right: -4px;
+      margin-right: calc(#{$size}px/-6);
+      box-shadow: 0 0 0 1.5px $white;
+      float: right;
+
+      &:first-of-type { margin-right: 0;}
+    }
+
+    .avatar-stack-reverse & {
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: -4px;
+      margin-left: calc(#{$size}px/-6);
+      box-shadow: 0 0 0 1.5px $white;
+
+      &:first-of-type { margin-left: 0;}
+    }
+  }
+}
+
+.avatar-stack {
+  display: inline-block;
+  vertical-align: middle;
+}

@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+  background: white;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+.large_metal_logo {
+  margin: 4rem 0 2rem -4px;
+}
+
+.m-area-header {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.m-page-header {
+  h1 {
+    font-size: $font-size-7;
+  }
+}
+
+@include media-breakpoint-up("sm") {
+  .m-area-header {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: left;
+  }
+  .content .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+
+@include media-breakpoint-up("xl") {
+  .content .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

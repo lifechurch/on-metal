@@ -33,7 +33,7 @@
 @import "metal/utilities/utilities";
 @import "metal/utilities/utilities-background";
 @import "metal/utilities/utilities-spacing";
-@import "metal/utilities/utilities-responsive";
+@import "metal/utilities/responsive";
 @import "metal/utilities-shadows";
 @import "metal/utilities/animation";
 
@@ -42,6 +42,7 @@
 @import "metal/forms";
 
 // Elements
+@import "metal/avatar";
 
 // Alloys
 @import "metal/alloys/card";
@@ -71,4 +72,3 @@
 @import "metal/tooltip";
 @import "metal/popover";
 @import "metal/carousel";
-

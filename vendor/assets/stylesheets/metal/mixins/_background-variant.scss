@@ -4,6 +4,14 @@
   #{$parent} {
     color: $text-color;
     background-color: $color !important;
+
+    // Sets the outline color of stacked avatars bassed on background color.
+    .avatar-stack,
+    .avatar-stack-reverse {
+      [class^="avatar-"] {
+        box-shadow: 0 0 0 1.5px $color;
+      }
+    }
   }
   a#{$parent} {
     @include hover-focus {
