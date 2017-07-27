@@ -1,4 +1,4 @@
-require "version"
+require_relative "version"
 
 module ON
   module Metal
