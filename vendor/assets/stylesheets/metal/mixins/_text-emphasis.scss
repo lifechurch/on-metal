@@ -1,0 +1,13 @@
+// Typography
+
+@mixin text-emphasis-variant($parent, $color, $hover-color:$color) {
+  #{$parent} {
+    color: $color !important;
+  }
+  a#{$parent} {
+    @include hover-focus {
+      color: tint($hover-color, 20%) !important;
+    }
+    text-decoration: underline;
+  }
+}

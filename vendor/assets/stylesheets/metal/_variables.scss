@@ -41,14 +41,38 @@ $overlay-light:       rgba($gray-dark, 0.25) !default;
 
 // Shadows
 $box-shadow-color: $overlay-light;
+$shadows: (
+  1,
+  2, // Cards
+  3, // Button hover
+  4,
+  5,
+  6,
+  7,
+  8, // Off-canvas
+  9,
+  10,
+  11,
+  12, // Modals
+  13,
+  14,
+  15,
+  16
+) !default;
 
-$box-shadow-1: 0 1px 4px $box-shadow-color;
-$box-shadow-2: 0 4px 16px $box-shadow-color;
-$box-shadow-3: 0 16px 48px $box-shadow-color;
+$box-shadow-1:  0 1px 2px $box-shadow-color;
+$box-shadow-2:  0 2px 4px $box-shadow-color;
+$box-shadow-3:  0 3px 6px $box-shadow-color;
+$box-shadow-6:  0 6px 12px $box-shadow-color;
+$box-shadow-8:  0 8px 16px $box-shadow-color;
+$box-shadow-12: 0 12px 24px $box-shadow-color;
+$box-shadow-16: 0 16px 32px $box-shadow-color;
 
 
 // Transitions
-// TODO document these transitions so people know how to access them
+// TODO
+// 1. Abstract the time away from the timing function so that people can set their own time.
+// 2. document these transitions so people know how to access them.
 
 $transition-all: all 0.2s ease-in-out !default;
 $transition-all-short: all 0.1s ease-in-out !default;
@@ -76,22 +100,30 @@ $spacer:                     1rem !default;
 $spacer-x:                   $spacer !default;
 $spacer-y:                   $spacer !default;
 $spacers: (
-  0: (
-    x:   0,
-    y:   0
-  ),
-  1: (
-    x:   $spacer-x,
-    y:   $spacer-y
-  ),
-  2: (
-    x:   ($spacer-x * 1.5),
-    y:   ($spacer-y * 1.5)
-  ),
-  3: (
-    x:   ($spacer-x * 3),
-    y:   ($spacer-y * 3)
-  )
+  0:      (0),
+  '0-25': ($spacer * 0.25),
+  '0-5':  ($spacer / 2),
+  '0-75': ($spacer * 0.75),
+  1:      ($spacer),
+  '1-5':  ($spacer * 1) + ($spacer / 2),
+  2:      ($spacer * 2),
+  '2-5':  ($spacer * 2) + ($spacer / 2),
+  3:      ($spacer * 3),
+  '3-5':  ($spacer * 3) + ($spacer / 2),
+  4:      ($spacer * 4),
+  '4-5':  ($spacer * 4) + ($spacer / 2),
+  5:      ($spacer * 5),
+  '5-5':  ($spacer * 5) + ($spacer / 2),
+  6:      ($spacer * 6),
+  '6-5':  ($spacer * 6) + ($spacer / 2),
+  7:      ($spacer * 7),
+  '7-5':  ($spacer * 7) + ($spacer / 2),
+  8:      ($spacer * 8),
+  '8-5':  ($spacer * 8) + ($spacer / 2),
+  9:      ($spacer * 9),
+  '9-5':  ($spacer * 9) + ($spacer / 2),
+  10:     ($spacer * 10),
+  '10-5': ($spacer * 10) + ($spacer / 2)
 ) !default;
 $border-width:               1px !default;
 
@@ -285,6 +317,10 @@ $button-secondary-color:            $body-color !default;
 $button-secondary-bg:               #fff !default;
 $button-secondary-border:           $gray-20 !default;
 
+$button-transparent-color:          $body-color !default;
+$button-transparent-bg:             $transparent !default;
+$button-transparent-border:         $gray-20 !default;
+
 $button-info-color:                 #fff !default;
 $button-info-bg:                    $brand-info !default;
 $button-info-border:                $button-info-bg !default;
@@ -465,29 +501,29 @@ $nav-pills-active-link-hover-color:         $component-active-color !default;
 // Pagination
 
 $pagination-padding-x:                .75rem !default;
-$pagination-padding-y:                .5rem !default;
+$pagination-padding-y:                8px !default;
 $pagination-padding-x-sm:             .75rem !default;
-$pagination-padding-y-sm:             .275rem !default;
+$pagination-padding-y-sm:             6px !default;
 $pagination-padding-x-lg:             1.5rem !default;
 $pagination-padding-y-lg:             .75rem !default;
 
 
 $pagination-color:                     $link-color !default;
-$pagination-bg:                        #fff !default;
+$pagination-bg:                        $white !default;
 $pagination-border-width:              $border-width !default;
-$pagination-border-color:              #ddd !default;
+$pagination-border-color:              $line-color !default;
 
 $pagination-hover-color:               $link-hover-color !default;
-$pagination-hover-bg:                  $gray-50 !default;
-$pagination-hover-border:              #ddd !default;
+$pagination-hover-bg:                  $gray-10 !default;
+$pagination-hover-border:              $line-color !default;
 
-$pagination-active-color:              #fff !default;
-$pagination-active-bg:                 $brand-primary !default;
-$pagination-active-border:             $brand-primary !default;
+$pagination-active-color:              $white !default;
+$pagination-active-bg:                 $brand-action !default;
+$pagination-active-border:             $brand-action !default;
 
 $pagination-disabled-color:            $gray-50 !default;
-$pagination-disabled-bg:               #fff !default;
-$pagination-disabled-border:           #ddd !default;
+$pagination-disabled-bg:               $gray-10 !default;
+$pagination-disabled-border:           $line-color !default;
 
 
 // Pager

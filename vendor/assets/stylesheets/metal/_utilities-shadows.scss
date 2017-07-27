@@ -1,0 +1,5 @@
+@each $size in $shadows {
+  .box-shadow-#{$size} {
+    box-shadow: 0 #{$size}px ($size * 2px) $box-shadow-color;
+  }
+}

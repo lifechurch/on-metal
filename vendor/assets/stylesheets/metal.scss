@@ -1,0 +1,74 @@
+/*!
+ * on Standards v2.0.alpha (http://on-standards.herokuapp.com)
+ * Copyright 2016 Life Church
+ * Maifest file for on-standards library
+ */
+
+// Additional functions to supplement the build-ins.
+@import "metal/functions";
+
+// Core variables and mixins
+@import "metal/colors";
+@import "metal/variables";
+@import "metal/mixins";
+
+// Reset and dependencies
+@import "metal/normalize";
+@import "metal/print";
+
+// Icons
+@import "https://s3.amazonaws.com/icomoon.io/47870/OpenNetwork/style.css";
+
+// Atoms
+@import "metal/baseline";
+@import "metal/images";
+@import "metal/code";
+@import "metal/buttons";
+
+// Layout
+@import "metal/grid";
+@import "metal/block-grid";
+
+// Utilities
+@import "metal/utilities/utilities";
+@import "metal/utilities/utilities-background";
+@import "metal/utilities/utilities-spacing";
+@import "metal/utilities/utilities-responsive";
+@import "metal/utilities-shadows";
+@import "metal/utilities/animation";
+
+// Atoms
+@import "metal/tables";
+@import "metal/forms";
+
+// Elements
+
+// Alloys
+@import "metal/alloys/card";
+
+// Haven't been migrated.
+@import "metal/type";
+@import "metal/dropdown";
+@import "metal/button-group";
+@import "metal/input-group";
+@import "metal/custom-forms";
+@import "metal/nav";
+@import "metal/navbar";
+@import "metal/breadcrumb";
+@import "metal/pagination";
+@import "metal/pager";
+@import "metal/tags";
+@import "metal/jumbotron";
+@import "metal/alert";
+@import "metal/progress";
+@import "metal/media";
+@import "metal/list-group";
+@import "metal/responsive-embed";
+@import "metal/close";
+// Components w/ JavaScript
+@import "metal/modal";
+@import "metal/off-canvas";
+@import "metal/tooltip";
+@import "metal/popover";
+@import "metal/carousel";
+

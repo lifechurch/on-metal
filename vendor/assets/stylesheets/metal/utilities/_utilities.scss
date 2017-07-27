@@ -80,9 +80,18 @@
 .font-weight-black   { font-weight: $font-weight-black; }
 .font-italic         { font-style: italic; }
 
+// No underline
+
+.no-underline {
+  text-decoration: none;
+  @include hover-focus-active {
+    text-decoration: none;
+  }
+}
+
 // Contextual colors
 
-@include text-emphasis-variant('.text-muted', $text-muted);
+@include text-emphasis-variant('.text-muted', $text-muted, $brand-action);
 
 @include text-emphasis-variant('.text-primary', $brand-primary);
 
@@ -91,3 +100,5 @@
 @include text-emphasis-variant('.text-warning', $brand-warning);
 
 @include text-emphasis-variant('.text-danger', $brand-danger);
+
+@include text-emphasis-variant('.text-body', $body-color, $brand-action);

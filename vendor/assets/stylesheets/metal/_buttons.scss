@@ -19,6 +19,7 @@ button,
   display: inline-block;
   font-weight: $button-font-weight;
   text-align: center;
+  color: inherit;
   background: $gray-20;
   white-space: nowrap;
   vertical-align: middle;
@@ -56,7 +57,7 @@ button,
     color: white;
     background-color: $button-highlight-color;
     border-color: $button-highlight-color;
-    box-shadow: $box-shadow-1;
+    box-shadow: $box-shadow-3;
   }
 
   &:active,
@@ -90,8 +91,8 @@ fieldset[disabled] a.button {
   &.focus {
     box-shadow: inset 0 0 0 1px $button-secondary-border;
     &:hover {
-      color: white;
-      box-shadow: $box-shadow-1;
+      color: $white;
+      box-shadow: $box-shadow-3;
     }
   }
   &:active,
@@ -105,6 +106,36 @@ fieldset[disabled] a.button {
     }
   }
   @include button-variant($button-secondary-color, $button-secondary-bg, $button-secondary-border);
+}
+
+.button-transparent {
+  @include button-variant($button-transparent-color, $button-transparent-bg, $button-transparent-border);
+  &:focus,
+  &.focus {
+    box-shadow: inset 0 0 0 1px $button-transparent-border;
+    &:hover {
+      color: $white;
+      box-shadow: none;
+    }
+  }
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      // background-color: $button-press-color;
+      // border-color: $button-press-color;
+      box-shadow: none;
+      color: $white;
+    }
+  }
+  &.text-primary {
+    &:hover,
+    &.hover,
+    &:active,
+    &.active {
+      color: $white !important;
+    }
+  }
 }
 
 //

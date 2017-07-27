@@ -4220,7 +4220,6 @@ var Modal = (function ($) {
 
         $(this._dialog).on(Event.MOUSEDOWN_DISMISS, function () {
           $(_this._element).one(Event.MOUSEUP_DISMISS, function (event) {
-            console.log("Here");
             if ($(event.target).is(_this._element)) {
               _this._ignoreBackdropClick = true;
             }
